@@ -1,0 +1,62 @@
+{
+    "name": "gzip-sizes",
+    "version": "0.1.0",
+    "description": "",
+    "main": "gzip-sizes.js",
+    "bin": {
+        "gzip-sizes": "./cli.js"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "glob": "^7.1.2",
+        "globby": "^7.1.1",
+        "gzip-size": "^4.1.0",
+        "pretty-bytes": "^4.0.2",
+        "utils-left-pad-string": "^1.0.1"
+    },
+    "devDependencies": {
+        "eslint": "^4.14.0",
+        "eslint-config-airbnb-base": "^12.1.0",
+        "eslint-config-prettier": "^2.9.0",
+        "eslint-plugin-import": "^2.8.0",
+        "eslint-plugin-prettier": "^2.4.0",
+        "prettier": "^1.9.2"
+    },
+    "prettier": {
+        "tabWidth": 4,
+        "trailingComma": "es5",
+        "singleQuote": true,
+        "bracketSpacing": true
+    },
+    "eslintConfig": {
+        "parserOptions": {
+            "ecmaVersion": 2017,
+            "sourceType": "module"
+        },
+        "env": {
+            "browser": true
+        },
+        "extends": [
+            "airbnb-base",
+            "prettier"
+        ],
+        "plugins": [
+            "prettier"
+        ],
+        "rules": {
+            "prettier/prettier": "error",
+            "no-console": 0
+        },
+        "globals": {
+            "DEV": true
+        }
+    },
+    "eslintIgnore": [
+        "!.eslint.js",
+        "dist"
+    ]
+}
